@@ -1,0 +1,67 @@
+{% extends "layout.njk" %}
+
+{% block head %}
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+{% endblock %}
+
+{% block content %}
+    <section class="courses">
+        <div class="title-page">
+            <h1>Courses</h1>
+        </div>
+        <div class="cards">
+            <div class="card" id="starter">
+                <div class="card__logo-course">
+                    <img src="/images/starter.svg" alt="Starter">  
+                </div>
+                <div class="card__title-course">
+                    <h1>Starter</h1>
+                </div>
+                <div class="card__info-course">
+                    <p>11 Modules</p>
+                    <p class="card__price">Free</p>
+                </div>
+            </div>
+            <div class="card" id="launchbase">
+                <div class="card__logo-course">
+                    <img src="/images/launchbase.svg" alt="Launchbase">  
+                </div>
+                <div class="card__title-course">
+                    <h1>LaunchBase</h1>
+                </div>
+                <div class="card__info-course">
+                    <p>52 Modules</p>
+                    <p class="card__price">Paid</p>
+                </div>
+            </div>
+            <div class="card" id="gostack">
+                <div class="card__logo-course">
+                    <img src="/images/gostack.svg" alt="GoStack">  
+                </div>
+                <div class="card__title-course">
+                    <h1>GoStack</h1>
+                </div>
+                <div class="card__info-course">
+                    <p>97 Modules</p>
+                    <p class="card__price">Paid</p>
+                </div>
+            </div>
+        </div>
+        <div class="modal-overlay">
+            <div class="modal">
+                <div class="screen-functions">
+                    <a class="maximize-modal">
+                        <span class="material-icons">fullscreen</span>
+                    </a>
+                    <a class="close-modal">
+                        <span class="material-icons">close</span>
+                    </a>
+                </div>
+                <div class="modal__content">
+                    <iframe src="" frameborder="0"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="scripts.js"></script>
+{% endblock %}
