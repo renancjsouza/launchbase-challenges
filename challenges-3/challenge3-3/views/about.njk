@@ -1,0 +1,30 @@
+{% extends "layout.njk" %}
+
+{% block content %}
+    <div id="company">
+        <img src="{{ about.avatar }}" alt="Image of {{ about.brand }}">
+        <h1>{{ about.brand }}</h1>
+    </div>
+    <div id="about">
+        <h1 class="section-title">{{ about.title}}</h1>
+        <p class="section-resume">{{ about.resume}}</p>
+    </div>
+    <div id="technologies">
+        <h3>{{ about.description }}</h3>
+        <ul>
+            <ul>
+                {% for technology in about.technologies %}
+                    <li>
+                        <img src="{{ technology.image }}" alt="Image of {{ technology.technology }}">
+                        <p>{{ technology.technology }}</p>
+                    </li>
+                {% endfor %}
+            </ul>
+        </ul>
+    </div>
+    <div class="footer">
+        {% for socialNetwork in about.socialNetworks %}
+            <a href="{{ socialNetwork.url }}" target="_blank">{{ socialNetwork.name }}</a>
+        {% endfor %}
+    </div>
+{% endblock %}

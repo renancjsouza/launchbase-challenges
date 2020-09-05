@@ -1,0 +1,11 @@
+{% extends "layout.njk" %}
+
+{% block title_page %}
+    <title>{{ item.course }} - Rocketseat</title>
+{% endblock %}
+
+{% block content %}
+    <div class="course">
+        <iframe src="https://www.rocketseat.com.br/{{ item.id }}" frameborder="0"></iframe>
+    </div>
+{% endblock %}
