@@ -1,0 +1,38 @@
+{% extends "layout.njk" %}
+
+{% block title %}
+ - Recipes
+{% endblock %}
+
+{% block content %}
+    <section id="recipes">
+        <div class="cards">
+            {% for recipe in recipes %}
+                <div class="card" id="{{loop.index0}}">
+                    <div class="card__recipe-image">
+                        <img src="{{recipe.image}}" alt="Image of {{recipe.title}}">
+                    </div>
+                    <div class="card__recipe-info">
+                        <h1>{{recipe.title}}</h1>
+                        <p>{{recipe.author}}</p>
+                    </div>
+                </div>
+            {% endfor %}
+            {% for recipe in recipes %}
+                <div class="card" id="{{loop.index0}}">
+                    <div class="card__recipe-image">
+                        <img src="{{recipe.image}}" alt="Image of {{recipe.title}}">
+                    </div>
+                    <div class="card__recipe-info">
+                        <h1>{{recipe.title}}</h1>
+                        <p>{{recipe.author}}</p>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+    </section>
+{% endblock %}
+
+{% block scripts %}
+    <script src="/scripts.js"></script>
+{% endblock %}

@@ -1,0 +1,38 @@
+{% extends "layout.njk" %}
+
+{%block banner %}
+    <div class="banner">
+        <div class="banner-resume">
+            <h1>The best recipes</h1>
+            <p>Learn how to build the best dishes with recipes created by professionals from all over the world.</p>
+        </div>
+        <div class="banner-image">
+            <img src="/assets/chef.png" title="The drawing of a chef">
+        </div>
+    </div>
+{% endblock %}
+
+{% block content %}
+    <section id="top-recipes">
+        <div class="title">
+            <h1>Most accessed</h1>
+        </div>
+        <div class="cards">
+            {% for recipe in recipes %}
+                <div class="card" id={{loop.index0}}>
+                    <div class="card__recipe-image">
+                        <img src="{{recipe.image}}" alt="Image of {{recipe.title}}">
+                    </div>
+                    <div class="card__recipe-info">
+                        <h1>{{recipe.title}}</h1>
+                        <p>{{recipe.author}}</p>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+    </section>
+{% endblock %}
+
+{% block scripts %}
+    <script src="/scripts.js"></script>
+{% endblock %}
