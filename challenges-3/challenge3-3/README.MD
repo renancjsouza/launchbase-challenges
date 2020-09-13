@@ -27,16 +27,11 @@
 
 ## Para executar o projeto
 
-Para a execução deste projeto é necessário instalar o Express e o Nunjucks.
+Para a execução deste projeto é necessário instalar as dependências do projeto, que são o Express e o Nunjucks.
 
 Abra o terminal e vá até a pasta do projeto, então execute o comando:
 ```cmd
-npm install express
-```
-
-Após a instalação do Express, instale o Nunjcks com o comando:
-```cmd
-npm install nunjucks
+npm install
 ```
 
 ## :rocket: Sobre o desafio
