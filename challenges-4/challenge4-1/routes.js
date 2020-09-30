@@ -2,7 +2,7 @@ const express = require('express');
 const routes = express.Router();
 
 routes.get('/', function(req, res) {
-    return res.render('home');
+    return res.render('/teachers');
 });
 
 routes.get('/teachers', function(req, res) {
