@@ -1,0 +1,59 @@
+{% extends 'layout.njk' %}
+
+{% block title %}
+School - Teachers
+{% endblock %}
+
+{% block content %}
+<div class="title">
+    <h1>New Teacher</h1>
+</div>
+<form class="card" method="post" action="/teachers">
+    <section class="avatar" style="background: url(https://source.unsplash.com/collection/4852103/500x500) no-repeat left center / cover;"></section>
+    <section class="details">
+        <div class="items">
+            <div>Avatar url</div>
+            <div>
+                <input type="url" name="avatar_url">
+            </div>
+        </div>
+        <div class="items">
+            <div>Teachers</div>
+            <div>
+                <input type="text" name="name">
+            </div>
+        </div>
+        <div class="items">
+            <div>Birth</div>
+            <div>
+                <input type="date" name="birth">
+            </div>
+        </div>
+        <div class="items">
+            <div>Education level</div>
+            <div>
+                <select name="education_level">
+                    <option value="High School Diploma" selected>High School Diploma</option>
+                    <option value="Bachelor's Degree">Bachelor's Degree</option>
+                    <option value="Master's Degree">Master's Degree</option>
+                    <option value="Ph.D. or Advanced Professional Degree">Ph.D. or Advanced Professional Degree</option>
+                </select>
+            </div>
+        </div>
+        <div class="items">
+            <div>Class type</div>
+            <div>
+                <input type="radio" name="class_type" value="Presential" checked> Presential
+                <input type="radio" name="class_type" value="Remote"> Remote
+            </div>
+        </div>
+        <div class="items">
+            <div>Subjects</div>
+            <div>
+                <input type="text" name="subjects">
+            </div>
+        </div>
+        <button type="submit">Save</button>
+    </section>
+</form>
+{% endblock %}

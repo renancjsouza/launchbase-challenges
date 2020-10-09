@@ -1,0 +1,44 @@
+{
+  "teachers": [
+    {
+      "id": 1,
+      "name": "Renan",
+      "avatar_url": "https://google.com.br",
+      "birth": 7929532800000,
+      "education_level": "High School Diploma",
+      "class_type": "Presential",
+      "subjects": "Python",
+      "created_at": 1602205098715
+    },
+    {
+      "id": 2,
+      "name": "Renan Souza",
+      "avatar_url": "https://google.com.br",
+      "birth": 656294400000,
+      "education_level": "Ph.D. or Advanced Professional Degree",
+      "class_type": "Presential",
+      "subjects": "Python, Django, Data Science",
+      "created_at": 1602205128392
+    },
+    {
+      "id": 3,
+      "name": "Renan Souza",
+      "avatar_url": "https://google.com.br",
+      "birth": 656294400000,
+      "education_level": "Ph.D. or Advanced Professional Degree",
+      "class_type": "Presential",
+      "subjects": "Python, Django, Data Science",
+      "created_at": 1602206919989
+    },
+    {
+      "id": 4,
+      "name": "Renan Souza",
+      "avatar_url": "https://google.com.br",
+      "birth": 656294400000,
+      "education_level": "High School Diploma",
+      "class_type": "Presential",
+      "subjects": "Django",
+      "created_at": 1602207261898
+    }
+  ]
+}
