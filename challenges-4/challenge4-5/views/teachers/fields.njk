@@ -1,0 +1,47 @@
+<div class="items">
+    <div>Avatar url</div>
+    <div>
+        <input type="url" name="avatar_url" value="{{ teacher.avatar_url }}">
+    </div>
+</div>
+<div class="items">
+    <div>Teachers</div>
+    <div>
+        <input type="text" name="name" value="{{ teacher.name }}">
+    </div>
+</div>
+<div class="items">
+    <div>Birth</div>
+    <div>
+        <input type="date" name="birth" value="{{ teacher.birth }}">
+    </div>
+</div>
+<div class="items">
+    <div>Education level</div>
+    <div>
+        <select name="education_level">
+            <option value="HSchool" {% if teacher.education_level == 'HSchool' %}selected{% endif %}>High School Diploma</option>
+            <option value="BDegree" {% if teacher.education_level == 'BDgree' %}selected{% endif %}>Bachelor's Degree</option>
+            <option value="MDegree" {% if teacher.education_level == 'MDegree' %}selected{% endif %}>Master's Degree</option>
+            <option value="Ph.D." {% if teacher.education_level == 'Ph.D.' %}selected{% endif %}>Ph.D. or Advanced Professional Degree</option>
+        </select>
+    </div>
+</div>
+<div class="items">
+    <div>Class type</div>
+    <div>
+        <input type="radio" name="class_type" value="Presential" {% if teacher.class_type == 'Presential' %}
+        checked
+        {% endif %}> Presential
+        <input type="radio" name="class_type" value="Remote" {% if teacher.class_type == 'Remote' %}
+        checked
+        {% endif %}> Remote
+    </div>
+</div>
+<div class="items">
+    <div>Subjects</div>
+    <div>
+        <input type="text" name="subjects" value="{{ teacher.subjects }}">
+    </div>
+</div>
+<input type="submit" value="Save">

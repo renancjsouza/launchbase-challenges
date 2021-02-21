@@ -1,0 +1,53 @@
+{
+  "teachers": [
+    {
+      "avatar_url": "https://google.com.br",
+      "name": "Renan Souza",
+      "birth": 656294400000,
+      "education_level": "Ph.D.",
+      "class_type": "Remote",
+      "subjects": "Python, Data Science",
+      "id": 0
+    },
+    {
+      "id": 1,
+      "name": "Renan C. Souza",
+      "avatar_url": "https://source.unsplash.com/collection/8360382/500x500",
+      "birth": 719452800000,
+      "education_level": "MDegree",
+      "class_type": "Remote",
+      "subjects": "Python, Data Science",
+      "created_at": 1602205128392
+    },
+    {
+      "id": 2,
+      "name": "Renan",
+      "avatar_url": "https://google.com.br",
+      "birth": 656294400000,
+      "education_level": "HSchool",
+      "class_type": "Presential",
+      "subjects": "Python, CSS",
+      "created_at": 1603335991467
+    },
+    {
+      "id": 3,
+      "name": "Renan",
+      "avatar_url": "http://www.teste.com.br",
+      "birth": 656294400000,
+      "education_level": "Ph.D.",
+      "class_type": "Remote",
+      "subjects": "Teste",
+      "created_at": 1613243307656
+    },
+    {
+      "id": 6,
+      "name": "Renan C. Souza",
+      "avatar_url": "https://google.com.br",
+      "birth": 656294400000,
+      "education_level": "MDegree",
+      "class_type": "Remote",
+      "subjects": "Python, Data Science",
+      "created_at": 1613871694077
+    }
+  ]
+}

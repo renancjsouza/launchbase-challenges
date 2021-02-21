@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+
+:root {
+    --primary-color: #07038C;
+    --secondary-color: #0439D9;
+    --third-color: #056CF2;
+    --fourth-color: #F20732;
+    --fifth-color: #F20505;
+    --background: rgb(232, 232, 232);
+    --white: #FFF;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    color: var(--third-color);
+    background: var(--background);
+}
+
+header {
+    background: var(--white);
+    width: 100%;
+    padding: 33px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.menu {
+    font-size: 20px;
+}
+
+.menu a {
+    color: var(--third-color);
+    text-decoration: none;
+    position: relative;
+}
+
+.menu a + a {
+    margin-left: 32px;
+}
+
+.menu a:hover {
+    color: var(--secondary-color);
+    transition: font-weight 200ms ease-in-out;
+}
+
+.menu a::after {
+    content: "";
+    width: 0;
+    height: 2px;
+    background: var(--fourth-color);
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+}
+
+.menu a:hover::after {
+    width: 100%;
+    transition: width 200ms ease-in-out;
+}
+
+a.active {
+    color: var(--white);
+    font-weight: 500;
+    background: var(--fifth-color);
+    padding: 8px 20px;
+    border-radius: 13px;
+}
+
+a.active:hover {
+    color: var(--white);
+    box-shadow: 0 0.08rem 0.15rem rgba(0, 0, 0, .4);
+    transition: box-shadow 150ms ease-in-out;
+}
+
+a.active:hover::after {
+    content: none;
+}
+
+.title {
+    min-width: 100%;
+    text-align: center;
+    padding: 16px;
+}
+
+.card {
+    background: var(--white);
+    min-height: 400px;
+    width: 600px;
+    margin: 8px auto;
+    display: grid;
+    grid-template-columns: 40% 60%;
+    box-shadow: 0px 2px 6px -2px rgba(0, 0, 0, 0.2);
+    animation: up 700ms ease;
+}
+
+@keyframes up {
+    from {
+        opacity: 0;
+        transform: translateY(15px);
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.details {
+    padding: 32px;
+}
+
+.details .items {
+    color: var(--primary-color);
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 16px;
+}
+
+.details .items:first-child {
+    border: none;
+}
+
+.details .items div:nth-child(1) {
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.7px;
+    font-weight: normal;
+}
+
+.details .items div:nth-child(2) {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.items div span {
+    color: var(--white);
+    background-color: var(--fourth-color);
+    padding: 8px;
+    border-radius: 16px;
+    display: inline-block;
+    margin: 2px;
+    box-shadow: 2px 0px 2px 2px rgba(0, 0, 0, .1);
+}
+
+input, select {
+    width: 100%;
+    outline: none;
+    color: var(--primary-color);
+    font-weight: bold;
+    font-size: 18px;
+    border: 1px solid var(--third-color);
+    border-radius: 4px;
+}
+
+input[type="radio"]:first-child {
+    margin-left: 0;
+}
+
+input[type="radio"] {
+    width: initial;
+    margin-left: 24px;
+}
+
+input::placeholder {
+    font-size: 16px;
+    font-weight: normal;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
+}
+
+a.button {
+    display: block;
+    box-sizing: border-box;
+    text-align: center;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+input[type="submit"],
+.button {
+    padding: 8px 32px;
+    background-color: var(--third-color);
+    color: var(--white);
+    border-radius: 4px;
+    margin-top: 32px;
+    width: 100%;
+    font-size: 16px;
+}
+
+#delete {
+    background-color: var(--fourth-color);
+    border-color: var(--fifth-color);
+}
+
+a.add {
+    background-color: var(--fourth-color);
+    color: var(--white);
+    text-decoration: none;
+    padding: 24px 32px;
+    font-size: 24px;
+    font-weight: bold;
+    border-radius: 50%;
+    position: fixed;
+    top: 85%;
+    left: 85%;
+}
