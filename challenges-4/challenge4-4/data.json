@@ -1,0 +1,84 @@
+{
+  "teachers": [
+    {
+      "id": 1,
+      "name": "Renan",
+      "avatar_url": "https://google.com.br",
+      "birth": 7929532800000,
+      "education_level": "HSchool",
+      "class_type": "Presential",
+      "subjects": "Python",
+      "created_at": 1602205098715
+    },
+    {
+      "id": 2,
+      "name": "Renan Souza",
+      "avatar_url": "https://google.com.br",
+      "birth": 656294400000,
+      "education_level": "Ph.D.",
+      "class_type": "Presential",
+      "subjects": "Python, Django, Data Science",
+      "created_at": 1602205128392
+    },
+    {
+      "id": 3,
+      "name": "Renan Souza",
+      "avatar_url": "https://google.com.br",
+      "birth": 656294400000,
+      "education_level": "Ph.D.",
+      "class_type": "Presential",
+      "subjects": "Python, Django, Data Science",
+      "created_at": 1602206919989
+    },
+    {
+      "id": 4,
+      "name": "Renan Souza",
+      "avatar_url": "https://google.com.br",
+      "birth": 656294400000,
+      "education_level": "HSchool",
+      "class_type": "Presential",
+      "subjects": "Django",
+      "created_at": 1602207261898
+    },
+    {
+      "id": 5,
+      "name": "Renan",
+      "avatar_url": "https://google.com.br",
+      "birth": 656294400000,
+      "education_level": "HSchool",
+      "class_type": "Presential",
+      "subjects": "Python, CSS",
+      "created_at": 1603335991467
+    },
+    {
+      "id": 6,
+      "name": "Renan",
+      "avatar_url": "http://www.teste.com.br",
+      "birth": 656294400000,
+      "education_level": "Ph.D.",
+      "class_type": "Remote",
+      "subjects": "Teste",
+      "created_at": 1613243307656
+    },
+    {
+      "id": 7,
+      "name": "reNan",
+      "avatar_url": "http://www.test12313.com",
+      "birth": 656294400000,
+      "education_level": "HSchool",
+      "class_type": "Presential",
+      "subjects": "Tests, dev",
+      "created_at": 1613244140544
+    },
+    {
+      "id": 8,
+      "name": "reNan",
+      "avatar_url": "http://www.test12313.com",
+      "birth": 656294400000,
+      "education_level": "HSchool",
+      "class_type": "Presential",
+      "subjects": "Tests",
+      "created_at": 1613509562370
+    }
+  ]
+}
