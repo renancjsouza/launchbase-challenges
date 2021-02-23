@@ -1,0 +1,34 @@
+{
+  "teachers": [
+    {
+      "id": 1,
+      "name": "Renan C. Souza",
+      "avatar_url": "https://images.unsplash.com/photo-1544168190-79c17527004f?ixid=MXwxMjA3fDB8MHxzZWFyY2h8Mjd8fHRlYWNoZXJ8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=700&q=60",
+      "birth": 719452800000,
+      "education_level": "MDegree",
+      "class_type": "Remote",
+      "subjects": "Python, Data Science",
+      "created_at": 1602205128392
+    },
+    {
+      "id": 2,
+      "name": "Renan",
+      "avatar_url": "https://images.unsplash.com/photo-1548449112-96a38a643324?ixid=MXwxMjA3fDB8MHxzZWFyY2h8OXx8dGVhY2hlcnxlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=700&q=60",
+      "birth": 656294400000,
+      "education_level": "HSchool",
+      "class_type": "Presential",
+      "subjects": "Python, CSS, Django",
+      "created_at": 1603335991467
+    },
+    {
+      "id": 3,
+      "name": "Renan",
+      "avatar_url": "https://images.unsplash.com/photo-1605711285791-0219e80e43a3?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MjF8fHRlYWNoZXJ8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=700&q=60",
+      "birth": 656294400000,
+      "education_level": "Ph.D.",
+      "class_type": "Remote",
+      "subjects": "Teste",
+      "created_at": 1613243307656
+    }
+  ]
+}

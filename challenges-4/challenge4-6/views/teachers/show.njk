@@ -1,0 +1,54 @@
+{% extends 'layout.njk' %}
+
+{% block title %}
+School - Teachers
+{% endblock %}
+
+{% block content %}
+<div class="title">
+    <h1>Teachers</h1>
+</div>
+<div class="card">
+    <section class="avatar" style="background: url({{ teacher.avatar_url }}) no-repeat left center / cover;"></section>
+    <section class="details">
+        <div class="items">
+            <div>Teachers</div>
+            <div>{{ teacher.name }}</div>
+        </div>
+        <div class="items">
+            <div>Age</div>
+            <div>{{ teacher.age }}</div>
+        </div>
+        <div class="items">
+            <div>Education level</div>
+            <div>{{ teacher.education_level }}</div>
+        </div>
+        <div class="items">
+            <div>Class type</div>
+            <div>{{ teacher.class_type }}</div>
+        </div>
+        <div class="items">
+            <div>Subjects</div>
+            <div>
+                {% for subject in teacher.subjects %}
+                    <span class="subjects">{{ subject }}</span>
+                {% endfor %}
+            </div>
+        </div>
+        <div class="items">
+            <div>Since</div>
+            <div>{{ teacher.created_at }}</div>
+        </div>
+        <div class="buttons">
+            <a class="button" href="/teachers/{{ teacher.id }}/edit">Edit</a>
+            <form method="POST" action="/teachers?_method=DELETE">
+                <input type="submit" id="delete" value="Delete">
+                <input type="hidden" name="id" value="{{ teacher.id }}">
+            </form>
+        </div>
+    </section>
+</div>
+<div class="features">
+    <a name="add" href="/teachers/create">+</a>
+</div>
+{% endblock %}
