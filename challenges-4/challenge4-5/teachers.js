@@ -117,6 +117,6 @@ exports.delete = function(req, res) {
     fs.writeFile("data.json", JSON.stringify(data, null, 2), function(err){
         if ( err ) return res.send("Write error!");
 
-        return res.redirect("/teachers/listing");
+        return res.render("To be continued in the challenge 4-6...");
     })
 }
