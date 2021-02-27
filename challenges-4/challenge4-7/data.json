@@ -1,0 +1,62 @@
+{
+  "students": [
+    {
+      "id": 1,
+      "avatar_url": "https://images.unsplash.com/photo-1604891692156-3f1db6499c72?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=334&q=80",
+      "name": "José Ribamar",
+      "email": "jr_msn_quer_tc@hotmail.com",
+      "birth": 709430400000,
+      "grade": "9",
+      "workload": "188"
+    },
+    {
+      "id": 2,
+      "avatar_url": "https://images.unsplash.com/photo-1591655694472-cc751117d95f?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxzZWFyY2h8OTZ8fHN0dWRlbnR8ZW58MHx8MHw%3D&auto=format&fit=crop&w=500&q=60",
+      "name": "Karoline Alencar Baptista",
+      "email": "karol_1932@gmail.com",
+      "birth": 712627200000,
+      "grade": "9",
+      "workload": "188"
+    },
+    {
+      "id": 3,
+      "avatar_url": "https://images.unsplash.com/photo-1596495578076-0c3a2be70d43?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MTE5fHxzdHVkZW50fGVufDB8fDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
+      "name": "Miguel Tamagushi",
+      "email": "xX_darkMT_Xx@gmail.com",
+      "birth": 1211068800000,
+      "grade": "12",
+      "workload": "300"
+    },
+    {
+      "id": 4,
+      "avatar_url": "https://images.unsplash.com/photo-1562925436-0a158efba8dc?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MTk5fHxzdHVkZW50fGVufDB8fDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
+      "name": "Wesley da Silva",
+      "email": "wesley_ZL@hotmail.com",
+      "birth": 531964800000,
+      "grade": "7",
+      "workload": "188"
+    }
+  ],
+  "teachers": [
+    {
+      "id": 1,
+      "name": "Renan C. Souza",
+      "avatar_url": "https://images.unsplash.com/photo-1544168190-79c17527004f?ixid=MXwxMjA3fDB8MHxzZWFyY2h8Mjd8fHRlYWNoZXJ8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=700&q=60",
+      "birth": 719452800000,
+      "education_level": "MDegree",
+      "class_type": "Remote",
+      "subjects": "Python, Data Science",
+      "created_at": 1602205128392
+    },
+    {
+      "id": 2,
+      "name": "Renan",
+      "avatar_url": "https://images.unsplash.com/photo-1548449112-96a38a643324?ixid=MXwxMjA3fDB8MHxzZWFyY2h8OXx8dGVhY2hlcnxlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=700&q=60",
+      "birth": 656294400000,
+      "education_level": "BDegree",
+      "class_type": "Presential",
+      "subjects": "Python, CSS, Django",
+      "created_at": 1603335991467
+    }
+  ]
+}

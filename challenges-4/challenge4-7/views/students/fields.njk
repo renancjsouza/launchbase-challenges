@@ -1,0 +1,45 @@
+<div class="items">
+    <div>Avatar url</div>
+    <div>
+        <input type="url" name="avatar_url" value="{{ student.avatar_url }}">
+    </div>
+</div>
+<div class="items">
+    <div>Students</div>
+    <div>
+        <input type="text" name="name" value="{{ student.name }}">
+    </div>
+</div>
+<div class="items">
+    <div>Email</div>
+    <div>
+        <input type="email" name="email" value="{{ student.email}}">
+    </div>
+</div>
+<div class="items">
+    <div>Birth</div>
+    <div>
+        <input type="date" name="birth" value="{{ student.birth }}">
+    </div>
+</div>
+<div class="items">
+    <div>Education level</div>
+    <div>
+        <select name="grade">
+            <option value="6" {% if student.grade == '6' %}selected{% endif %}>6th Grade - Middle School</option>
+            <option value="7" {% if student.grade == '7' %}selected{% endif %}>7th Grade - Middle School</option>
+            <option value="8" {% if student.grade == '8' %}selected{% endif %}>8th Grade - Middle School</option>
+            <option value="9" {% if student.grade == '9' %}selected{% endif %}>Freshman</option>
+            <option value="10" {% if student.grade == '10' %}selected{% endif %}>Sophomore</option>
+            <option value="11" {% if student.grade == '11' %}selected{% endif %}>Junior</option>
+            <option value="12" {% if student.grade == '12' %}selected{% endif %}>Senior</option>
+        </select>
+    </div>
+</div>
+<div class="items">
+    <div>Workload</div>
+    <div>
+        <input type="number" name="workload" value="{{ student.workload }}">
+    </div>
+</div>
+<input type="submit" value="Save">

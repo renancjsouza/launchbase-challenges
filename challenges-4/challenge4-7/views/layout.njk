@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}School{% endblock %}</title>
+    <link rel="stylesheet" href="/style.css" type="text/css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    {% block stylesheet %}
+    {% endblock %}
+</head>
+<body>
+    <header>
+        <div class="menu">
+            <a href="/teachers">Teachers</a>
+            <a href="/students">Students</a>
+        </div>
+    </header>
+    {% block content %}
+    {% endblock %}
+    {% block scripts %}
+    {% endblock %}
+
+    <script src="/scripts.js"></script>
+    
+</body>
+</html>

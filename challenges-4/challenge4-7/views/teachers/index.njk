@@ -1,0 +1,52 @@
+{% extends 'layout.njk' %}
+
+{% block title %}
+School - Teachers
+{% endblock %}
+
+{% block content %}
+<div class="title">
+    <h1>Teachers</h1>
+</div>
+<div class="card table-container">
+    <div class="button-actions">
+        <a href="/teachers/create">New</a>
+    </div>
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Class type</th>
+                <th>Subjects</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for teacher in teachers %}
+                <tr>
+                    <td>
+                        <div class="table-avatar">
+                            <span style="background: url('{{ teacher.avatar_url }}');"></span>
+                            {{ teacher.name }}
+                        </div>
+                    </td>
+                    <td>{{ teacher.class_type }}</td>
+                    <td>
+                    {% for subjects in teacher.subjects.split(",") %}
+                        <span class="subjects">{{ subjects }}</span>
+                    {% endfor %}
+                    </td>
+                    <td>
+                        <div class="button-actions">
+                            <a href="/teachers/{{ teacher.id }}">
+                                Show
+                            </a>
+                        </div>
+                    </td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+    </section>
+</div>
+{% endblock %}
